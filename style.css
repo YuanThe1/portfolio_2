@@ -51,8 +51,6 @@
 .text-center {
     color: white;
     position: relative;
-    z-index: 1;
-    margin-top: 5rem;
 }
 
 .text-center img {
@@ -61,6 +59,8 @@
     display: block;
     width: 300px;
     height: 300px;
+    pointer-events: none;
+    user-select: none;
 }
 
 .text-center h1 {
@@ -100,18 +100,20 @@
     border-radius: 0;
     box-shadow: none;
     background-color: transparent;
-    position: relative;
+    position: absolute;
     z-index: 1000;
 }
 
 .navbar-nav .nav-link {
     border: 2px solid #000;
     border-radius: 5px;
-    padding: 8px 12px;
-    margin: 0 5px;
+    padding: 10px 18px;
+    width: 90px;
+    margin: 0 15px;
     color: #000000;
     position: relative;
     z-index: 1000;
+    text-align: center;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
@@ -146,7 +148,7 @@
 
 .navbar-expand-lg {
     background-color: transparent;
-    position: relative;
+    position: absolute;
     z-index: 1000;
 }
 
@@ -157,6 +159,7 @@
 }
 
 .navbar-nav {
+    display: flex;
     justify-content: center;
     position: relative;
     z-index: 1000;
