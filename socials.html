@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/8bit-wonder" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gajraj-one" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/panton-black-caps" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pf-din-text-universal" rel="stylesheet">
+</head>
+<body>
+    <div class="bgAnimation" id="bgAnimation">
+        <div class="backgroundAmim">
+            <!-- Background animation content here -->
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto" style="margin: 0 auto !important;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="socials.html">Socials<span class="sr-only"></span></a></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="thesis.html">TestIt</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Ai</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div>
+    <div class="container mt-5">
+        <h1 class="text-center">Connect with Me</h1>
+        <div class="row mt-4">
+            <div class="col-md-4 text-center">
+                <a href="https://www.facebook.com" target="_blank">
+                    <ion-icon name="logo-facebook" style="font-size: 100px;"></ion-icon>
+                    <h4>Facebook</h4>
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="#" onclick="copyToClipboard('yuanfair1@gmail.com')">
+                    <ion-icon name="mail-outline" style="font-size: 100px;"></ion-icon>
+                    <h4>Email</h4>
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="https://www.instagram.com" target="_blank">
+                    <ion-icon name="logo-instagram" style="font-size: 100px;"></ion-icon>
+                    <h4>Instagram</h4>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4 text-center">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <ion-icon name="logo-linkedin" style="font-size: 100px;"></ion-icon>
+                    <h4>LinkedIn</h4>
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="#" onclick="copyToClipboard('09954167553')">
+                    <ion-icon name="call-outline" style="font-size: 100px;"></ion-icon>
+                    <h4>Number</h4>
+                </a>
+            </div>
+            <div class="col-md-4 text-center">
+                <a href="https://www.github.com" target="_blank">
+                    <ion-icon name="logo-github" style="font-size: 100px;"></ion-icon>
+                    <h4>GitHub</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        function copyToClipboard(text) {
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('Text copied to clipboard: ' + text);
+        }
+    </script>>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
