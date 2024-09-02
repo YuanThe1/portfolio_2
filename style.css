@@ -59,19 +59,20 @@
     display: block;
     width: 300px;
     height: 300px;
-    pointer-events: none;
-    user-select: none;
 }
 
 .text-center h1 {
-    border-radius: 10px;
-    padding: 10px 20px;
     display: inline-block;
     font-family: 'Gajraj One', sans-serif;
-    color: #fff;
+    color: transparent;
     position: relative;
     z-index: 1;
     margin-top: 20px;
+}
+
+.text-center p {
+    font-family: 'Gajraj One', sans-serif;
+    color: transparent;
 }
 
 .typing-animation {
@@ -100,8 +101,9 @@
     border-radius: 0;
     box-shadow: none;
     background-color: transparent;
-    position: absolute;
+    /* position: absolute; */
     z-index: 1000;
+    width: 100% !important;
 }
 
 .navbar-nav .nav-link {
@@ -112,7 +114,7 @@
     margin: 0 15px;
     color: #000000;
     position: relative;
-    z-index: 1000;
+    /* z-index: 1000; */
     text-align: center;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
@@ -158,12 +160,12 @@
     z-index: 1000;
 }
 
-.navbar-nav {
+/* .navbar-nav {
     display: flex;
     justify-content: center;
     position: relative;
     z-index: 1000;
-}
+} */
 
 .slider {
     position: relative;
@@ -231,12 +233,21 @@
 
 .container .col-md-8 {
     background-color: transparent;
+    color: #fff;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: 'PF Din Text Universal', sans-serif;
     position: relative;
     z-index: 1000;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -webkit-touch-callout: none;
+    -ms-user-select: none;
+    pointer-events: none;
 }
 
 .container .col-md-8 h2 {
@@ -251,7 +262,7 @@
     font-family: 'PF Din Text Universal', sans-serif;
     line-height: 1.6;
     margin-bottom: 10px;
-    color: #000000;
+    color: #fff;
     position: relative;
     z-index: 1000;
 }
@@ -299,13 +310,11 @@
     color: white;
 }
 
-.container p {
-    background-color: #ffffff;
-    border-radius: 10px;
+.container p { /*includes index p */
+    background-color: transparent;
+    color: #fff;
     padding: 20px;
-    color: #000000;
     margin: 20px auto;
-    max-width: 800px;
     position: relative;
     z-index: 1000;
 }
@@ -328,7 +337,7 @@
     width: 100%;
 }
 
-button {
+.carousel button {
     position: absolute;
     top: 50%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -340,11 +349,11 @@ button {
     transform: translateY(-50%);
 }
 
-button.prev {
+.carousel .prev {
     left: 0;
 }
 
-button.next {
+.carousel .next {
     right: 0;
 }
 
@@ -356,4 +365,15 @@ button.next {
     #prev, #next {
         font-size: 1.5em;
     }
+}
+
+.my-5 {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -webkit-touch-callout: none;
+    -ms-user-select: none;
+    pointer-events: none;
 }
