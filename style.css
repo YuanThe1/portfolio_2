@@ -48,7 +48,7 @@
     }
 }
 
-.text-center {
+.text-center .container {
     color: white;
     position: relative;
     user-select: none;
