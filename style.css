@@ -76,6 +76,7 @@
     position: relative;
     z-index: 1;
     margin-top: 20px;
+    margin-left: 40px;
 }
 
 .text-center p {
@@ -311,7 +312,7 @@
 }
 
 .container .row .col-md-4 ion-icon {
-    font-size: 80px;
+    font-size: 120px;
 }
 
 .container h1, .container h4 {
